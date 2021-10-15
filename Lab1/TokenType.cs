@@ -8,6 +8,9 @@
         BinaryOperator,
         BinaryAndUnaryOperator,
         UnaryOperator,
+        ArgumentSeparator,
+        NumberSeparator,
         Number,
+        Invalid
     }
 }

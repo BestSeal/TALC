@@ -8,17 +8,22 @@
 
         public double? DoubleValue { get; }
 
-        public int? IntValue { get; }
-
         public Token(TokenType tokenType,
-            string? stringValue = null,
-            double? doubleValue = null,
-            int? intValue = null)
+            string? stringValue = null)
         {
             TokenType = tokenType;
             StringValue = stringValue;
-            DoubleValue = doubleValue;
-            IntValue = intValue;
         }
+
+        public Token(TokenType tokenType,
+            double? doubleValue = null)
+        {
+            TokenType = tokenType;
+            DoubleValue = doubleValue;
+            StringValue = doubleValue?.ToString();
+        }
+
+        public override string ToString()
+            => $"{StringValue}[{TokenType}]";
     }
 }

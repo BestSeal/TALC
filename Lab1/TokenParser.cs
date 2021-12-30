@@ -1,4 +1,6 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
+using System.Globalization;
 using System.Linq;
 using System.Text;
 
@@ -8,12 +10,14 @@ namespace Lab1
     {
         public readonly Dictionary<string, TokenType> StringTokens;
 
+        public int TokenMaxLength => StringTokens.Max(x => x.Key.Length);
+
         public string Expression { get; }
-        
+
         public TokenParser(string expression)
         {
             Expression = expression;
-            
+
             StringTokens = new Dictionary<string, TokenType>
             {
                 { "(", TokenType.LeftBracket },
@@ -25,6 +29,7 @@ namespace Lab1
                 { "^", TokenType.BinaryOperator },
                 { "!", TokenType.UnaryOperator },
                 { ",", TokenType.ArgumentSeparator },
+                { ".", TokenType.NumberSeparator },
                 { "sin", TokenType.Function },
                 { "cos", TokenType.Function },
                 { "log", TokenType.Function },
@@ -34,51 +39,60 @@ namespace Lab1
 
         public IEnumerable<Token> GetNextToken()
         {
-            var tempStringBuilder = new StringBuilder();
-            TokenType prevTokenType = TokenType.Invalid;
-            double? tempDoubleValue = null;
-            int? tempIntValue = null;
-            string? tempStringValue = null;
-            
-            var tokenType = StringTokens.TryGetValue(Expression[0].ToString(), out var type) ? type : TokenType.Invalid;
-            
-            foreach (var stringSymbol in Expression.Remove(0,1).Select(symbol => symbol.ToString()))
+            if (string.IsNullOrEmpty(Expression))
             {
-                if (tokenType == TokenType.Invalid)
+                throw new ArgumentException($"{nameof(Expression)} can not be null or empty string");
+            }
+
+            var compoundSymbol = new StringBuilder(Expression.Length - 1);
+
+            for (int i = 0; i < Expression.Length; ++i)
+            {
+                var symbol = Expression[i].ToString();
+                compoundSymbol.Append(symbol);
+                var compoundString = compoundSymbol.ToString();
+                
+                if (StringTokens.TryGetValue(compoundString, out var tokenType) && 
+                    tokenType != TokenType.NumberSeparator)
                 {
-                    tempStringBuilder.Append(stringSymbol);
-
-                    tempStringValue = tempStringBuilder.ToString();
-                    
-                    if (StringTokens.TryGetValue(tempStringValue, out type))
-                    {
-                        tokenType = type;
-                        tempDoubleValue = null;
-                        tempIntValue = null;
-                        tempStringBuilder.Append(stringSymbol);
-                    }
-                    else if (int.TryParse(tempStringValue, out int intValue))
-                    {
-                        tokenType = TokenType.Number;
-                        tempIntValue = intValue;
-                        tempStringBuilder.Append(stringSymbol);
-                    }
-                    else if (double.TryParse(tempStringValue, out double doubleValue))
-                    {
-                        tokenType = TokenType.Number;
-                        tempDoubleValue = doubleValue;
-                        tempStringBuilder.Append(stringSymbol);
-                    }
-
-                    prevTokenType = tokenType;
-                    
+                    compoundSymbol.Clear();
+                    yield return new Token(tokenType, compoundString);
                     continue;
-                    
+                }
+                
+                if (TryGetNumber(compoundString, out var number) &&
+                    (i == Expression.Length - 1 ||
+                    i < Expression.Length - 1 &&
+                    Expression[i + 1] != '.' &&
+                    !IsNumber(Expression[i + 1].ToString())))
+                {
+                    compoundSymbol.Clear();
+                    yield return new Token(TokenType.Number, number);
+                    continue;
                 }
 
-                tempStringBuilder.Clear();
-                yield return new Token(prevTokenType, tempStringBuilder.ToString(), tempDoubleValue, tempIntValue);
+                if (compoundString.Length >= TokenMaxLength && 
+                    !IsNumber(compoundString))
+                {
+                    compoundSymbol.Clear();
+                    yield return new Token(TokenType.Invalid, compoundString);
+                }
             }
         }
+
+        private static bool TryGetNumber(string str, out double? number)
+        {
+            if (double.TryParse(str, NumberStyles.Any, CultureInfo.InvariantCulture, out var outNumber))
+            {
+                number = outNumber;
+                return true;
+            }
+
+            number = null;
+            return false;
+        }
+
+        private static bool IsNumber(string str)
+            => double.TryParse(str, NumberStyles.Any, CultureInfo.InvariantCulture, out var outNumber);
     }
 }

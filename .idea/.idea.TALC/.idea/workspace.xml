@@ -5,12 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="56db4a21-019e-42a5-90ae-f88e34d54053" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Lab1/Lab1.csproj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Lab1/Program.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Lab1/Token.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Lab1/TokenParser.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Lab1/TokenType.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.TALC/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.TALC/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lab1/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Lab1/Program.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lab1/Token.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Lab1/Token.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lab1/TokenParser.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Lab1/TokenParser.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -19,6 +17,9 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
   </component>
   <component name="ProjectId" id="1zYqcrchpqWuHBL0mVqL9sNeCca" />
   <component name="ProjectViewState">
@@ -61,6 +62,9 @@
       <option name="presentableId" value="Default" />
       <updated>1634335453888</updated>
       <workItem from="1634335458635" duration="11000" />
+      <workItem from="1634403574446" duration="1222000" />
+      <workItem from="1639228332622" duration="10479000" />
+      <workItem from="1639241370412" duration="6867000" />
     </task>
     <servers />
   </component>
@@ -68,7 +72,7 @@
     <option name="version" value="3" />
   </component>
   <component name="UnityCheckinConfiguration" checkUnsavedScenes="true" />
-  <component name="UnityProjectConfiguration" hasMinimizedUI="null" />
+  <component name="UnityProjectConfiguration" hasMinimizedUI="false" />
   <component name="UnityUnitTestConfiguration" currentTestLauncher="NUnit" />
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />

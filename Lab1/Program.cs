@@ -8,7 +8,7 @@ namespace Lab1
     {
         static void Main()
         {
-            string expression = null;
+            string? expression = null;
             while (expression == null)
             {
                 Console.WriteLine("Enter an expression:");
@@ -17,14 +17,48 @@ namespace Lab1
 
             var parser = new TokenParser(expression.ToLower().Replace(" ", ""));
 
-            var tokens = new List<Token>();
-            
+            var tokenStack = new Stack<Token>();
+            var tokenQueue = new Queue<Token>();
+
             foreach (var token in parser.GetNextToken())
             {
-                tokens.Add(token);
-            }
+                switch (token.TokenType)
+                {
+                    case TokenType.LeftBracket:
+                        tokenStack.Push(token);
+                        break;
+                    case TokenType.RightBracket:
+                        break;
+                    case TokenType.Function:
+                        tokenStack.Push(token);
+                        break;
+                    case TokenType.BinaryOperator:
+                        break;
+                    case TokenType.BinaryAndUnaryOperator:
+                        break;
+                    case TokenType.UnaryOperator:
+                        break;
+                    case TokenType.ArgumentSeparator:
+                        while (tokenStack.TryPeek(out var peekedToken) &&
+                               peekedToken.TokenType != TokenType.LeftBracket)
+                        {
+                            tokenQueue.Enqueue(tokenStack.Pop());
+                        }
 
-            Console.WriteLine(string.Join("", tokens.Select(x => x.StringValue).ToArray()));
+                        if (!tokenStack.Any() || tokenStack.Peek().TokenType != TokenType.LeftBracket)
+                        {
+                        }
+
+                        break;
+                    case TokenType.NumberSeparator:
+                        break;
+                    case TokenType.Number:
+                        tokenQueue.Enqueue(token);
+                        break;
+                    case TokenType.Invalid:
+                        throw new ArgumentException($"Invalid token found {token}");
+                }
+            }
         }
     }
 }

@@ -5,10 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="56db4a21-019e-42a5-90ae-f88e34d54053" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/Lab1/Expression.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.TALC/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.TALC/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lab1/Lab1.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Lab1/Lab1.csproj" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Lab1/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Lab1/Program.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Lab1/Token.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Lab1/Token.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Lab1/TokenParser.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Lab1/TokenParser.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lab1/TokenType.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Lab1/TokenType.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -22,6 +25,9 @@
     <option name="stateVersion" value="1" />
   </component>
   <component name="ProjectId" id="1zYqcrchpqWuHBL0mVqL9sNeCca" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -65,6 +71,8 @@
       <workItem from="1634403574446" duration="1222000" />
       <workItem from="1639228332622" duration="10479000" />
       <workItem from="1639241370412" duration="6867000" />
+      <workItem from="1641217719003" duration="7076000" />
+      <workItem from="1641390683224" duration="20875000" />
     </task>
     <servers />
   </component>
@@ -74,6 +82,17 @@
   <component name="UnityCheckinConfiguration" checkUnsavedScenes="true" />
   <component name="UnityProjectConfiguration" hasMinimizedUI="false" />
   <component name="UnityUnitTestConfiguration" currentTestLauncher="NUnit" />
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
   </component>

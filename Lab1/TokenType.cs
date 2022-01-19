@@ -1,14 +1,15 @@
-﻿namespace Lab1;
-
-public enum TokenType
+﻿namespace Lab1
 {
-    LeftBracket,
-    RightBracket,
-    Function,
-    BinaryOperator,
-    UnaryOperator,
-    ArgumentSeparator,
-    NumberSeparator,
-    Number,
-    Invalid
+    public enum TokenType
+    {
+        LeftBracket,
+        RightBracket,
+        Function,
+        BinaryOperator,
+        UnaryOperator,
+        ArgumentSeparator,
+        NumberSeparator,
+        Number,
+        Invalid
+    }
 }

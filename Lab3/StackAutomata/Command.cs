@@ -31,10 +31,14 @@ namespace Lab3.StackAutomata
             _pushStackExpression = pushStackExpression;
         }
 
-        public bool IsExecutable(Stack<Symbol> stack, string expression) => (expression[0] == _readSymbol.Value || 
-                                                                            _readSymbol.Value == Symbol.EpsilonSymbol) && 
-                                                                            stack.TryPeek(out var peeked) &&
-                                                                            peeked.Value == _popStackSymbol.Value;
+        public bool IsExecutable(Stack<Symbol> stack, string expression) =>
+            (_readSymbol.Value == Symbol.EpsilonSymbol &&
+             _popStackSymbol.IsStackButtonSymbol) ||
+            (!string.IsNullOrEmpty(expression) &&
+             expression[0] == _readSymbol.Value ||
+             _readSymbol.Value == Symbol.EpsilonSymbol) &&
+            stack.TryPeek(out var peeked) &&
+            peeked.Value == _popStackSymbol.Value;
 
         public (string expression, Stack<Symbol> stack, bool isSuccess) Execute(Stack<Symbol> stack, string expression)
         {
@@ -61,16 +65,15 @@ namespace Lab3.StackAutomata
             }
             else
             {
-                if(tmpStack.Count > 0)
+                if (tmpStack.Count > 0)
                 {
                     tmpStack.Pop();
                 }
                 else
                 {
                     isSuccess = false;
-                    
                 }
-                
+
                 if (_pushStackExpression?.Any() == true && _pushStackExpression[0].Value != Symbol.EpsilonSymbol)
                 {
                     foreach (var symbol in _pushStackExpression)
@@ -97,9 +100,9 @@ namespace Lab3.StackAutomata
         public override bool Equals(object? obj)
         {
             var res = obj is Command command &&
-                   command._readSymbol?.Value == _readSymbol?.Value &&
-                   command._popStackSymbol?.Value == _popStackSymbol?.Value &&
-                   SymbolsCompare(command._pushStackExpression, _pushStackExpression);
+                      command._readSymbol?.Value == _readSymbol?.Value &&
+                      command._popStackSymbol?.Value == _popStackSymbol?.Value &&
+                      SymbolsCompare(command._pushStackExpression, _pushStackExpression);
 
             return res;
         }

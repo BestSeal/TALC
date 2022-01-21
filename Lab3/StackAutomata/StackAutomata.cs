@@ -30,6 +30,19 @@ namespace Lab3.StackAutomata
             }
         }
 
+        public string GetExecutionOrder()
+        {
+            var finiteCommandsOrder = CommandsOrder.FirstOrDefault(x => x.Any(c => c.IsFinalState));
+
+            if (finiteCommandsOrder?.Count > 0)
+            {
+                return string.Join(" |- ",
+                    finiteCommandsOrder.Select(x => $"({x.ExpressionSnapshot},{x.StackSnapshot})").ToList());
+            }
+
+            return "No finite commands order was found";
+        }
+
         public bool ParseExpression()
         {
             foreach (var command in _config.Commands)
@@ -42,12 +55,14 @@ namespace Lab3.StackAutomata
 
             while (!CommandsOrder.Any(x => x.Any(s => s.IsFinalState)))
             {
+                if (CommandsOrder.Count > 4000) return false;
+
                 _config.CreateCommandsList();
                 var updatedOrder = new List<List<Command>>();
                 foreach (var commandsLine in CommandsOrder)
                 {
                     var command = commandsLine.Last();
-                    
+
                     var (expr, stack, status) = (command.ExpressionSnapshot, command.ResultStack,
                         command.ExecutionResult);
 
@@ -87,11 +102,10 @@ namespace Lab3.StackAutomata
                 CommandsOrder = CommandsOrder.OrderByDescending(x => x.Count).ToList();
             }
 
-            return false;
+            return true;
         }
-        
     }
-    
+
     public class SymbolListsComparer : IEqualityComparer<List<Command>>
     {
         public bool Equals(List<Command> x, List<Command> y)
@@ -101,7 +115,7 @@ namespace Lab3.StackAutomata
             if (ReferenceEquals(y, null)) return false;
             if (x.GetType() != y.GetType()) return false;
             if (x.Count != y.Count) return false;
-            
+
             for (int i = 0; i < x.Count; i++)
             {
                 if (!x[i].Equals(y[i])) return false;

@@ -53,6 +53,7 @@ namespace Lab3
                 {
                     Automata = new StackAutomata.StackAutomata(AutomataConfig, AutomataExpression.Text, InitStack.Text);
                     AppendAutomataInfo(Automata.ParseExpression() ? "Expression is valid" : "Expression is invalid");
+                    AppendAutomataInfo( $"({AutomataExpression.Text}, {InitStack.Text}) |- " + Automata.GetExecutionOrder());
                 }
                 catch (Exception exception)
                 {

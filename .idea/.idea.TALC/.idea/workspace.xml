@@ -8,20 +8,40 @@
     <projectFile>Lab4/Lab4.csproj</projectFile>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="56db4a21-019e-42a5-90ae-f88e34d54053" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Lab3/App.xaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Lab3/App.xaml.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Lab3/AssemblyInfo.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Lab3/Lab3.csproj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Lab3/MainWindow.xaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Lab3/MainWindow.xaml.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Lab3/StackAutomata/Command.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Lab3/StackAutomata/Config.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Lab3/StackAutomata/StackAutomata.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Lab3/StackAutomata/Symbol.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Lab4/Class1.cs" afterDir="false" />
+    <list default="true" id="56db4a21-019e-42a5-90ae-f88e34d54053" name="Changes" comment="3 done, TALC done C:">
+      <change afterPath="$PROJECT_DIR$/Lab4/Analyzer/HashMapHelper.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lab4/Analyzer/Main.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lab4/Analyzer/Production.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lab4/Analyzer/Symbol.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lab4/Analyzer/SyntaxAnalyzer.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/llab4/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/llab4/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/llab4/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/llab4/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/llab4/.idea/runConfigurations/TAYAKLab4.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/llab4/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/llab4/target/classes/cfile.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/llab4/target/classes/grammar.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/llab4/target/classes/test1.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/llab4/target/classes/test_grammar.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.TALC/.idea/indexLayout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.TALC/.idea/indexLayout.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.TALC/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.TALC/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.TALC/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.TALC/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lab2/BlackMagic/graph.png" beforeDir="false" afterPath="$PROJECT_DIR$/Lab2/BlackMagic/graph.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lab2/BlackMagic/states.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Lab2/BlackMagic/states.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lab3/MainWindow.xaml.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Lab3/MainWindow.xaml.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lab3/StackAutomata/Command.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Lab3/StackAutomata/Command.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lab3/StackAutomata/StackAutomata.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Lab3/StackAutomata/StackAutomata.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lab4/Class1.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lab4/Lab4.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Lab4/Lab4.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lab4/MainWindow.xaml.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Lab4/MainWindow.xaml.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/TALC.sln" beforeDir="false" afterPath="$PROJECT_DIR$/TALC.sln" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Дфи4/App.xaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Дфи4/App.xaml.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Дфи4/AssemblyInfo.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Дфи4/MainWindow.xaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Дфи4/MainWindow.xaml.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Дфи4/Дфи4.csproj" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -32,63 +52,35 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/503d551712fe40299628367bb73da11257ddb9ae161c67191c12fc4fc83d147/Queue.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Lab2/App.xaml.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/e26f20cdf1d6485ebc34e5352a883de9b200/82/41b1d079/VertexBase.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Lab2/MainWindow.xaml" root0="FORCE_HIGHLIGHTING" />
-    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/c7120e2ff5eb439bade48ce7210a0889840b90/4f/27b58fd9/EventRoute.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/f377761d2f874d258e10e56172404e793b400/74/5ec2c0fd/EdgeControlBase.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/f377761d2f874d258e10e56172404e793b400/2c/569f15a2/EdgeControl.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/767db1e17d404f86c3c73c54c6b20b5ff9ec43b79ef47681ae34b40a6852cf9/Where.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/ce9b239e7dafd811d27c34554a1e62236943314158687cb4cae1746476f942a/ExecutionContext.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/211f827810ec6b83cb63678320c3965d617ca1f8e798b3ea5eb241e40f630c3/String.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/85439f6eae98fa347ee1d64e1d66ef769eaa9e98ad0a848cca2f75fdead69/String.Manipulation.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/d6531bbf3890d125316c30e7ee634367f2f83176be2fec54928371a10a62dd1/Process.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/fa60121f8597edda05ba1e79c874b7b6527c3a7a58eed18a5e6266beec5bea/FileStream.Windows.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/97892987fb2a9bc79b06cbf7fbedf98a5ef75c6a588983bbc038064cfaba/Select.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/566191597a2a1374888eead5d1142bd46efda6b2cdba4ae1d6222ac72b56a93/Process.Win32.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/93d1d2f8b3bc7ea1b8121ecb7ada55de22dbaf813221997e75ea7a27cfc4a6b/JsonConverterOfT.WriteCore.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/503d551712fe40299628367bb73da11257ddb9ae161c67191c12fc4fc83d147/Queue.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/d2c0cc07f98f4288b449943783208ac33d400/31/94a878c5/GXLogicCore`3.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/981d65c7fbe528a515db85bcbb92fe19ea3641e6ccd184df299fbba0eff72630/AnyAll.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/f377761d2f874d258e10e56172404e793b400/1a/ab975fe2/GraphArea`3.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Дфи4/MainWindow.xaml.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Lab2/MainWindow.xaml" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/ce9b239e7dafd811d27c34554a1e62236943314158687cb4cae1746476f942a/ExecutionContext.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/c7120e2ff5eb439bade48ce7210a0889840b90/4f/27b58fd9/EventRoute.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/f377761d2f874d258e10e56172404e793b400/74/5ec2c0fd/EdgeControlBase.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/211f827810ec6b83cb63678320c3965d617ca1f8e798b3ea5eb241e40f630c3/String.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/697050deb22a2642d1f1311dc2abbff272e4d5575d8f69d97af9f902d985b27/ExceptionDispatchInfo.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/85439f6eae98fa347ee1d64e1d66ef769eaa9e98ad0a848cca2f75fdead69/String.Manipulation.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/f377761d2f874d258e10e56172404e793b400/1a/ab975fe2/GraphArea`3.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/f377761d2f874d258e10e56172404e793b400/a9/d5b28558/VertexControl.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/f377761d2f874d258e10e56172404e793b400/2c/569f15a2/EdgeControl.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/d6531bbf3890d125316c30e7ee634367f2f83176be2fec54928371a10a62dd1/Process.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/fa60121f8597edda05ba1e79c874b7b6527c3a7a58eed18a5e6266beec5bea/FileStream.Windows.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Lab2/MainWindow.xaml.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/97892987fb2a9bc79b06cbf7fbedf98a5ef75c6a588983bbc038064cfaba/Select.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/767db1e17d404f86c3c73c54c6b20b5ff9ec43b79ef47681ae34b40a6852cf9/Where.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/566191597a2a1374888eead5d1142bd46efda6b2cdba4ae1d6222ac72b56a93/Process.Win32.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Lab2/AssemblyInfo.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Дфи4/MainWindow.xaml" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/93d1d2f8b3bc7ea1b8121ecb7ada55de22dbaf813221997e75ea7a27cfc4a6b/JsonConverterOfT.WriteCore.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
   <component name="ProjectId" id="1zYqcrchpqWuHBL0mVqL9sNeCca" />
-  <component name="ProjectLevelVcsManager">
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
   </component>
   <component name="ProjectViewState">
@@ -100,10 +92,10 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="XThreadsFramesViewSplitterKey" value="0.3452381" />
-    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
-  <component name="RunManager" selected=".NET Project.Lab3">
+  <component name="RunManager" selected=".NET Project.WpfApp1">
     <configuration name="Дфи4" type="DotNetProject" factoryName=".NET Project">
       <option name="EXE_PATH" value="" />
       <option name="PROGRAM_PARAMETERS" value="" />
@@ -215,11 +207,6 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <recent_temporary>
-      <list>
-        <item itemvalue="Python.magic" />
-      </list>
-    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -243,7 +230,9 @@
       <workItem from="1642596415143" duration="988000" />
       <workItem from="1642609413581" duration="14791000" />
       <workItem from="1642626877541" duration="25587000" />
-      <workItem from="1642676167004" duration="11346000" />
+      <workItem from="1642676167004" duration="16022000" />
+      <workItem from="1642699529643" duration="573000" />
+      <workItem from="1642767995838" duration="800000" />
     </task>
     <task id="LOCAL-00001" summary="Готова вторая лаба :C">
       <created>1642621210978</created>
@@ -266,7 +255,14 @@
       <option name="project" value="LOCAL" />
       <updated>1642621306988</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Промежуточный коммит">
+      <created>1642694871608</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1642694871608</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -291,46 +287,22 @@
     <MESSAGE value="Готова вторая лаба :C" />
     <MESSAGE value="Докоммит части проекта" />
     <MESSAGE value="Докоммит файла приложения" />
-    <option name="LAST_COMMIT_MESSAGE" value="Докоммит файла приложения" />
+    <MESSAGE value="Промежуточный коммит" />
+    <MESSAGE value="3 done, TALC done C:" />
+    <option name="LAST_COMMIT_MESSAGE" value="3 done, TALC done C:" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/Lab1/Expression.cs</url>
-          <line>112</line>
-          <properties documentPath="D:\dev\c#\TALC\Lab1\Expression.cs" initialLine="112" containingFunctionPresentation="method 'Evaluate'">
-            <startOffsets>
-              <option value="4558" />
-            </startOffsets>
-            <endOffsets>
-              <option value="4598" />
-            </endOffsets>
-          </properties>
-          <option name="timeStamp" value="3" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/Lab3/StackAutomata/StackAutomata.cs</url>
-          <line>44</line>
-          <properties documentPath="D:\dev\c#\TALC\Lab3\StackAutomata\StackAutomata.cs" initialLine="44" containingFunctionPresentation="method 'ParseExpression'">
-            <startOffsets>
-              <option value="1259" />
-            </startOffsets>
-            <endOffsets>
-              <option value="1288" />
-            </endOffsets>
-          </properties>
-          <option name="timeStamp" value="48" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="DotNet Breakpoints">
           <url>file://$PROJECT_DIR$/Lab3/MainWindow.xaml.cs</url>
-          <line>58</line>
+          <line>59</line>
           <properties documentPath="D:\dev\c#\TALC\Lab3\MainWindow.xaml.cs" initialLine="58" containingFunctionPresentation="method 'ExpressionEnteredHandler'">
             <startOffsets>
-              <option value="1896" />
+              <option value="2022" />
             </startOffsets>
             <endOffsets>
-              <option value="1934" />
+              <option value="2060" />
             </endOffsets>
           </properties>
           <option name="timeStamp" value="66" />
